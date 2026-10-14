@@ -1,4 +1,3 @@
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 import { useMemo, useState } from 'react';
 import { NavLink, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import {
@@ -8,6 +7,7 @@ import {
   SlidersHorizontal, Sparkles, Users, Wallet, X, Percent, ReceiptText,
   Fuel, Plane, Utensils, ShoppingBag, CarFront, Trash2
 } from 'lucide-react';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 const initialGroups = [
   { id: 1, name: 'Trip to Goa', people: 4, emoji: '🌴', color: 'mint', total: 8420, detail: '3 expenses this week' },
